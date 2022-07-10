@@ -11,7 +11,11 @@ int main() {
 
   while (t--) {
     cin >> a >> b >> c;
-    string o = (a + b + c) % 2 == 0 ? "YES" : "NO";
-    cout << o  << endl;
+
+    if((a + b) == c) cout << "YES\n";
+    else if((b+c) == a) cout << "YES\n";
+    else if((c+a) == b) cout << "YES\n";
+    else  cout << "NO\n";
+
   }
 }
