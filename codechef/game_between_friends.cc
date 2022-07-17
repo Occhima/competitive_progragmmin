@@ -11,15 +11,16 @@ int main() {
 
   while (t--) {
     cin >> a >> b >> c >> d;
+
     if(a < b) a  += c;
     else  b += c;
+
     if(a < b) a  += d;
     else  b += d;
 
     string out = a < b ? "S" : "N";
 
-
-    cout << out;
+    cout << out << endl;
 
 
   }
