@@ -2,12 +2,9 @@
 using namespace std;
 
 void print_array(int arr[], int n) {
-
   for(int i = 0; i < n; i++)
     cout<<arr[i]<<" ";
-
 }
-
 
 template<typename T>
 void swap_items(T &a, T &b)
