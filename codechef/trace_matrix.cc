@@ -1,46 +1,49 @@
 #include <bits/stdc++.h>
-#include<vector>
+#include <vector>
 using namespace std;
-
-void print_matrix(vector<vector<int>> mat) {
-
-  int n = mat.size();
-
-  for (int i = 0; i < n; i++)
-    for (int j = 0; j < n; j++)
-        cout << mat[i][j] << " \n"[j == n-1];
-
-}
 
 void solve(int n, vector<vector<int>> mat) {
 
-  vector<int> max_trace;
+  // for r, c, l
+    // get the submatrice
+    // calculate the trace
+    // put the trace in a vector
 
-  int max_item = *max_element(max_trace.begin(), max_trace.end());
-  cout << max_item << endl;
+  // return the maximum element of this vector
+  // NOTE:  We can loop directly in to the main diagonal
+
+  int sum = 0;
+  vector<vector<int>> out = { {1, 2}, {1 , 2}};
+
+
+    // cout << sum << endl;
+
+  // auto max_ele = max_element(out_vec.begin(), out_vec.end());
+
+
+
+
+
+
 }
 
 int main() {
 
   ios::sync_with_stdio(0);
   cin.tie(0);
-  int t, n, aux;
-  cin >> t;
+  int t, n, value;
 
+  cin >> t;
   while (t--) {
 
     cin >> n;
-    vector<vector<int>> mat;
-    for(int i = 0; i< n ; i++){
-      vector<int> arr;
-      for(int i = 0; i< n ; i++){
-        cin >> aux;
-        arr.push_back(aux);
-      }
-      mat.push_back(arr);
-    }
+    vector<vector<int>> mat(n);
 
+    for(int i = 0; i < n; i++)
+      for(int j = 0; j < n; j++){
+        cin >> value;
+        mat[i].push_back(value);
+      }
     solve(n, mat);
   }
-
 }

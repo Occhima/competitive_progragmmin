@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 
-void solve(int n, int A[]) {
+void solve(string c) {
 
 
 }
@@ -10,17 +11,13 @@ int main() {
 
   ios::sync_with_stdio(0);
   cin.tie(0);
-  int t, n;
+  int t;
+  string c;
 
   cin >> t;
 
   while (t--) {
-    cin >> n;
-    int A[n];
-
-    for(int i =0; i < n ; i++)
-      cin >> A[i];
-    
-    solve();
+    cin >> c;
+    solve(c);
   }
 }
